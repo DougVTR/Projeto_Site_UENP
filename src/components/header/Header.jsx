@@ -10,6 +10,8 @@ export function Header() {
             <div id="logo_UENP"><img src="" alt="Logo da Universidade Estadual do Norte do Paraná" name="Logo da Universidade Estadual do Norte do Paraná" /></div>
             <nav id="menu_Navegacao" name="Menu de Navegação">
                 <ul id="menu" name="Menu de Navegação">
+
+
                     <li className="botao_Menu" id="botao_Perfil" name="Botão de menu de perfil"><a href="#">Perfil</a>
                         <ul name="Informações do perfil">
                             <li><a href="#"> Atividades Complementares</a></li>
@@ -27,6 +29,7 @@ export function Header() {
                             <li><a href="#">TCC/Relatórios</a></li>
                         </ul>
                     </li>
+
                     <li className="botao_Menu" id="botao_Documentos" name="Botão de menu de documentos"><a href="#">Documentos</a>
                         <ul name="Informações de Documentos">
                             <li><a href="#">Carteirinha</a></li>
@@ -38,6 +41,7 @@ export function Header() {
                             <li><a href="#">Matriz Curricular</a></li>
                         </ul>
                     </li>
+
                     <li className="botao_Menu" id="botao_Agenda" name="Botão de menu de Agenda"><a href="#">Agenda</a>
                         <ul name="Informações de agenda">
                             <li><a href="#">Caixa de Mensagens</a></li>

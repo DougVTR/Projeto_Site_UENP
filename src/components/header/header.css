@@ -9,61 +9,62 @@ body {
     font-family: arial, helvetica, sans-serif;
     font-size: 12px;
 }
+
 #menu_Navegacao{
 font-family: 'Secular One', sans-serif;
 display: flex;
 align-items: center;
-height: 4vh;
+height: 5vh;
 border: 1px solid red;
 }
-.botao_Menu{
-    margin: 1vh 15vh 1vh 0;
-}
 #menu {
-    font-size: 18px;
+    font-size: 22px;
     width: 100%;
     display: flex;
     list-style: none;
-    justify-content: center;
-    float: left;
+    justify-content: space-evenly;
 }
 
 #menu li {
+    border-radius: 5px;
     position: relative;
-    float: left;
     border: 1px solid #c0c0c0;
+    min-width: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#menu li ul {
+    font-size: 16px;
+    position: absolute;
+    margin-top: 2.6rem;
+    background-color: #fff;
+    display: none;
+}
+
+#menu li:hover ul {
+    display: flex;
+    flex-direction: column;
 }
 
 #menu li a {
     color: #333;
     text-decoration: none;
-    padding: 5px 10px;
-    
+    padding: 5px 0;
 }
 
 #menu li a:hover {
+    border-radius: 5px;
     background: #333;
     color: #fff;
-    -moz-box-shadow: 0 3px 10px 0 #CCC;
-    -webkit-box-shadow: 0 3px 10px 0 #ccc;
     text-shadow: 0px 0px 5px #fff;
 }
 
-#menu li ul {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    background-color: #fff;
-    display: none;
-}
-
-#menu li:hover ul,
-#menu li.over ul {
-    display: block;
-}
-
 #menu li ul li {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #c0c0c0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 150px;
 }
