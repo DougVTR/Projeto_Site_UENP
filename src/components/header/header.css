@@ -25,7 +25,7 @@ border: 1px solid red;
     justify-content: space-evenly;
 }
 
-#menu li {
+.botao_Menu {
     border-radius: 5px;
     position: relative;
     border: 1px solid #c0c0c0;
@@ -34,37 +34,51 @@ border: 1px solid red;
     display: flex;
     flex-direction: column;
 }
-#menu li ul {
-    font-size: 16px;
-    position: absolute;
-    margin-top: 2.6rem;
-    background-color: #fff;
-    display: none;
-}
 
-#menu li:hover ul {
-    display: flex;
-    flex-direction: column;
-}
-
-#menu li a {
+.link_Menu {
     color: #333;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 1px 0;
+}
+.ul_Informacoes {
+    font-size: 16px;
+    position: absolute;
+    margin-top: 2.2rem;
+    background-color: #fff;
+    display: none;
+    width: 15rem;
+    border-radius: 5px;
 }
 
-#menu li a:hover {
+.li_Secundario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+}
+.li_Secundario a{
+    color: #333;
+    text-decoration: none;
+}
+.li_Secundario a:hover{
     border-radius: 5px;
     background: #333;
     color: #fff;
     text-shadow: 0px 0px 5px #fff;
 }
 
-#menu li ul li {
+
+.botao_Menu:hover .ul_Informacoes {
     display: flex;
     flex-direction: column;
-    border: 1px solid #c0c0c0;
-    display: flex;
-    flex-direction: column;
-    width: 150px;
+}
+
+.botao_Menu:hover .link_Menu {
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
 }
