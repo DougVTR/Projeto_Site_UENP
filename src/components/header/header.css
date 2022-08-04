@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Source+Sans+Pro:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +10,29 @@ body {
     font-family: arial, helvetica, sans-serif;
     font-size: 12px;
 }
-
-#menu_Navegacao{
-font-family: 'Secular One', sans-serif;
-display: flex;
-align-items: center;
-height: 5vh;
-border: 1px solid red;
+header{
+    background: #d4d4d4;
 }
+
+#header_Primario {
+    font-size: 40px;
+    font-family: 'Secular One', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 0 1rem;
+    align-items: center;
+    padding: 0;
+}
+
+#menu_Navegacao {
+    font-family: 'Secular One', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background: #a7a7a7;
+    margin: -0.5rem 0 0 0;
+}
+
 #menu {
     font-size: 22px;
     width: 100%;
@@ -28,11 +44,12 @@ border: 1px solid red;
 .botao_Menu {
     border-radius: 5px;
     position: relative;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #cfcdcd;
     min-width: 15rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+    background: #757575;;
 }
 
 .link_Menu {
@@ -40,6 +57,7 @@ border: 1px solid red;
     text-decoration: none;
     padding: 1px 0;
 }
+
 .ul_Informacoes {
     font-size: 16px;
     position: absolute;
@@ -59,11 +77,13 @@ border: 1px solid red;
     width: 100%;
     border-radius: 5px;
 }
-.li_Secundario a{
+
+.li_Secundario a {
     color: #333;
     text-decoration: none;
 }
-.li_Secundario a:hover{
+
+.li_Secundario a:hover {
     border-radius: 5px;
     background: #333;
     color: #fff;

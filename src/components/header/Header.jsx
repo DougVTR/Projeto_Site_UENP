@@ -1,15 +1,17 @@
+import { Boas_Vindas_Header } from '../boas_Vindas_Header/Boas_Vindas_Header'
+import { Foto_Header } from '../foto_header/Foto_Header'
+import { Logo_Curso } from '../logo_curso/Logo_Curso'
+import { Logo_UENP } from '../logo_UENP/Logo_UENP'
 import './header.css'
 export function Header() {
-    var teste = "Douglas Vitor"
     return (
-
         <header>
-            <div id="foto_Perfil">
-                <img src="" alt="Foto de perfil" />
+            <div id="header_Primario">
+                <Foto_Header />
+                <Boas_Vindas_Header />
+                <Logo_Curso/>
+                <Logo_UENP/>
             </div>
-            <div id="boas_Vindas" name={"Bem vindo" + {}}>Bem vindo {teste}</div>
-            <div id="logo_Curso"><img src="" alt={"Logo do curso"} name={"Logo do curso"} /></div>
-            <div id="logo_UENP"><img src="" alt="Logo da Universidade Estadual do Norte do Paraná" name="Logo da Universidade Estadual do Norte do Paraná" /></div>
             <nav id="menu_Navegacao" name="Menu de Navegação">
                 <ul id="menu" name="Menu de Navegação">
                     <li className="botao_Menu" id="botao_Perfil" name="Botão de menu de perfil"><a className='link_Menu' href="#">Perfil</a>
